@@ -1,0 +1,40 @@
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Prototype.dll
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Prototype.pdb
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\EntityFramework.dll
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\EntityFramework.xml
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\obj\Debug\ResolveAssemblyReference.cache
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\obj\Debug\Prototype.dll
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\obj\Debug\Prototype.pdb
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.Unity.dll
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Prototype.Framework.dll
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Unity.Mvc3.dll
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Prototype.Framework.pdb
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.Unity.xml
+C:\Users\sstewart\documents\visual studio 2010\Projects\Prototype\Prototype\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Prototype.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Prototype.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\EntityFramework.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.Unity.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Prototype.Framework.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Unity.Mvc3.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Prototype.Framework.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\EntityFramework.xml
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.Unity.xml
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\obj\Debug\Prototype.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\obj\Debug\Prototype.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Devices.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Repositories.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Widgets.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Devices.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Repositories.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Prototype\bin\Widgets.pdb

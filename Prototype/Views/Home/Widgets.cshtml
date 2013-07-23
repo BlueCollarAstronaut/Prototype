@@ -1,0 +1,129 @@
+﻿@model Prototype.ViewModels.WidgetViewModel
+
+@{
+    ViewBag.Title = "Widgets";
+}
+
+<div class="left cf">
+    <p>
+    <ul>
+        @foreach (var category in Model.AvailableWidgets.Select(x => x.Category).Distinct())
+        {
+            <li>
+                @category
+                <ul>
+                    @foreach (var template in Model.AvailableWidgets.Where(x => x.Category == category))
+                    {
+                        <li>
+                            <div draggable="true" class="widget" id="@template.ID">
+                                @template.Name
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+    </p>
+</div>
+
+<div id="widgetWorkspace" class="content cf">
+    @{Html.RenderAction("WidgetWorkspace", "Home");}
+</div>
+
+<script>
+
+    var widgetId;
+    var srcElement;
+
+    $(function () {
+        $(".ui-resizable").resizable({});
+        $("#tabs").tabs();
+        $('.draggable').draggable({ scroll: true });
+        AttachDragDropListeners();
+    });
+
+
+    function AttachDragDropListeners() {
+        console.log('attaching listeners');
+        $("div .widget").each(function () {
+            this.addEventListener('dragstart', OnDragStart, false);
+        });
+        $("div #dropZone").each(function () {
+            this.addEventListener('dragenter', OnDragEnter, false);
+            this.addEventListener('dragover', OnDragOver, false);
+            this.addEventListener('dragleave', OnDragLeave, false);
+            this.addEventListener('drop', OnDrop, false);
+            this.addEventListener('dragend', OnDragEnd, false);
+        });
+    }
+
+
+    function OnDragStart(e) {
+        this.style.opacity = '0.3';
+        console.log('start drag');
+
+        srcElement = this;
+        widgetId = $(this).attr("id");
+        console.log(widgetId);
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/html', $(this).innerHTML);
+    }
+
+    function OnDragOver(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        e.dataTransfer.dropEffect = 'move';
+        return false;
+    }
+
+    function OnDragEnter(e) {
+        $(this).addClass('highlight');
+        console.log('drag enter');
+    }
+
+    function OnDragLeave(e) {
+        $(this).removeClass('highlight');
+        console.log('drag leave');
+    }
+
+    function OnDrop(e) {
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        }
+        console.log('Drop');
+        srcElement.style.opacity = '1';
+        $(this).removeClass('highlight');
+
+        var url = '@Url.Action("AddWidget")';
+        $.ajax({
+            url: url,
+            data: { id: widgetId },
+            success: function (html) {
+                RefreshWorkspace(html);
+            }
+        });
+
+        return false;
+
+
+
+    }
+
+    function RefreshWorkspace(html) {
+        console.log('refreshing workspace');
+        $('#widgetWorkspace').html(html);
+        AttachDragDropListeners();
+        $(".ui-resizable").resizable({});
+        $("#tabs").tabs();
+        $('.draggable').draggable({ scroll: true });
+        return false;
+    }
+
+
+    function OnDragEnd(e) {
+        $("div .bag").removeClass('highlight');
+        this.style.opacity = '1';
+    }
+</script>

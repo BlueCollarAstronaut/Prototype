@@ -1,0 +1,67 @@
+﻿
+
+#dropZone {
+    background: whitesmoke;
+    border: black dashed 1px;
+    text-align: center;
+    height:600px;
+    color: white;
+}
+
+.draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+
+
+.main-menu ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.main-menu li
+{
+    display:inline;
+}
+
+
+div.container
+{
+    width:100%;
+    margin:0px;
+    border:1px solid gray;
+    line-height:150%;
+}
+div.header,div.footer
+{
+    padding:0.5em;
+    color:white;
+    background-color:gray;
+    clear:left;
+}
+h1.header
+{
+    padding:0;
+    margin:0;
+}
+div.left
+{
+    float:left;
+    width:160px;
+    margin:0;
+    padding:1em;
+}
+div.content
+{
+    margin-left:190px;
+    border-left:1px solid gray;
+    padding:1em;
+}
+
+/* Start of "Micro clearfix" */
+        
+.cf { zoom: 1; }
+.cf:before,
+.cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+        
+/* End of "Micro clearfix" */

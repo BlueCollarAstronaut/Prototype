@@ -1,0 +1,10 @@
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Widget\bin\Debug\Prototype.Framework.dll
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Widget\bin\Debug\Prototype.Framework.pdb
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Widget\obj\Debug\ResolveAssemblyReference.cache
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Widget\obj\Debug\Prototype.Framework.dll
+c:\users\sstewart\documents\visual studio 2010\Projects\Prototype\Widget\obj\Debug\Prototype.Framework.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Widget\bin\Debug\Prototype.Framework.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Widget\bin\Debug\Prototype.Framework.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Widget\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Widget\obj\Debug\Prototype.Framework.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Widget\obj\Debug\Prototype.Framework.pdb

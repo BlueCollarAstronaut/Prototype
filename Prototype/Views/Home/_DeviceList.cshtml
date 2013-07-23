@@ -1,0 +1,19 @@
+﻿@model Prototype.ViewModels.DeviceListViewModel
+
+<h3>Devices</h3>
+@*<ul id="devicelist">
+    @foreach (var category in Model.Devices.Select(x => x.Category).Distinct())
+    {
+        <li>
+            @category
+            <ul>
+                @foreach (var device in Model.Devices.Where(x => x.Category == category))
+                {
+                    <li>
+                        <div draggable="true" class="device" id="@device.Name">@device.Name</div>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+</ul>*@

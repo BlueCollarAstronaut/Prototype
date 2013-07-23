@@ -1,0 +1,50 @@
+﻿@model Prototype.ViewModels.DeviceViewModel
+@{
+    ViewBag.Title = "Devices";
+}
+ 
+<div class="left cf">
+    <p>
+    <ul>
+        @foreach (var category in Model.AvailableDevices.Select(x => x.Category).Distinct())
+        {
+            <li>
+                @category
+                <ul>
+                    @foreach (var template in Model.AvailableDevices.Where(x => x.Category == category))
+                    {
+                        <li>
+                            <div draggable="true" class="device" id="@template.Name">@template.Name
+                            (@Html.ActionLink("Add Device", "AddDevice", "Home",  new { id = @template.ID }, null))
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+    </p>
+</div>
+
+<div class="content cf">
+    <table>
+        <thead>
+            <th>Category</th>
+            <th>Manufacturer</th>
+            <th>Device Name</th>
+            <th></th>
+        </thead>
+        <tbody>
+            @foreach (var device in Model.Project.Devices)
+            {
+                <tr>
+                    <td>@device.Template.Category</td>
+                    <td>@device.Template.Manufacturer</td>
+                    <td>@device.Template.Name</td>
+                    <td>@Html.ActionLink("Delete", "RemoveDevice", "Home", new { id = @device.ID }, null)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

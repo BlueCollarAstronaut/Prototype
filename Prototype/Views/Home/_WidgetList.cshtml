@@ -1,0 +1,19 @@
+﻿@model Prototype.ViewModels.WidgetListViewModel
+
+<h3>Widgets</h3>
+<ul id="categories">
+    @foreach (var category in Model.WidgetCategories)
+    {
+        <li>
+            @category.Category
+            <ul>
+                @foreach (var widget in category.Widgets)
+                {
+                    <li>
+                        <div draggable="true" class="widget" id="@widget.Name">@widget.Name</div>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

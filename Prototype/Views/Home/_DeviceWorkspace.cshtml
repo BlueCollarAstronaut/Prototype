@@ -1,0 +1,21 @@
+﻿@model Prototype.Models.WorkspaceModel
+           
+           
+<div class="sidebar-left">
+    @{Html.RenderAction("DeviceList", "Home");}
+</div>
+
+<div id="dropZone" class="content workspace ui-widget-content">
+    @foreach (var widget in Model.Widgets)
+    {
+        <div class="ui-resizable draggable">
+            @Html.Raw(widget.CodeSnippet)
+        </div>
+    }
+</div>
+
+<div class="sidebar-right">
+    RIGHT
+    @*@{Html.RenderAction("WidgetList", "Home");}*@
+</div>
+

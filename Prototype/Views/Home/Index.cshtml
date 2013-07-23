@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Devices</a></li>
+        <li><a href="#tabs-2">Clients</a></li>
+    </ul>
+    <div id="tabs-1">
+        <div>
+            <p>
+                @{Html.RenderAction("DeviceWorkspace", "Home");}
+            </p>
+        </div>
+    </div>
+    <div id="tabs-2">
+        <p>
+            @{Html.RenderAction("ClientWorkspace", "Home");}
+        </p>
+    </div>
+</div>
+
+
+ <script>
+     $(function () {
+         $(".ui-resizable").resizable({});
+         $("#tabs").tabs();
+         $('.draggable').draggable({scroll:true });
+     });
+
+
+    function ClearWorkspace(){
+       var url = '@Url.Action("ClearWorkspace")';
+        $.ajax({
+            url: url,
+            data: { },
+            success: function (html) {
+                RefreshWorkspace(html);
+            }
+        });
+
+        return false;
+    }
+
+    function AttachDragDropListeners() {
+        $("div .widget").each(function () {
+            this.addEventListener('dragstart', OnDragStart, false);
+        });
+        $("div #dropZone").each(function () {
+            this.addEventListener('dragenter', OnDragEnter, false);
+            this.addEventListener('dragover', OnDragOver, false);
+            this.addEventListener('dragleave', OnDragLeave, false);
+            this.addEventListener('drop', OnDrop, false);
+            this.addEventListener('dragend', OnDragEnd, false);
+        });
+    }
+
+    $(document).ready(function () {
+        AttachDragDropListeners();
+    });
+
+    var widgetName;
+    var srcElement;
+
+    function OnDragStart(e) {
+        this.style.opacity = '0.3';
+        console.log('start drag');
+
+        srcElement = this;
+        widgetName = $(this).attr("id");
+        console.log(widgetName);
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/html', $(this).innerHTML);
+    }
+
+    function OnDragOver(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+        e.dataTransfer.dropEffect = 'move';
+        return false;
+    }
+
+    function OnDragEnter(e) {
+        $(this).addClass('highlight');
+        console.log('drag enter');
+    }
+
+    function OnDragLeave(e) {
+        $(this).removeClass('highlight');
+        console.log('drag leave');
+    }
+
+    function OnDrop(e) {
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        }
+        console.log('Drop');
+        srcElement.style.opacity = '1';
+        $(this).removeClass('highlight');
+
+        var url = '@Url.Action("AddWidget")';
+        $.ajax({
+            url: url,
+            data: { widgetName: widgetName },
+            success: function (html) {
+                RefreshWorkspace(html);
+            }
+        });
+
+        return false;
+
+
+
+    }
+
+    function RefreshWorkspace(html) {
+        $('#Workspace').html(html);
+        
+        $(".ui-resizable").resizable({
+
+        });
+        AttachDragDropListeners();
+        return false;
+    }
+    
+
+    function OnDragEnd(e) {
+        $("div .bag").removeClass('highlight');
+        this.style.opacity = '1';
+    } 
+</script>
+*@

@@ -1,0 +1,10 @@
+﻿@model Prototype.Framework.Project
+           
+<div id="dropZone" class="workspace">
+    @foreach (var widget in Model.Widgets)
+    {
+        <div class="ui-resizable draggable">
+            @Html.Raw(@widget.Template.TemplateCodeSnippet)
+        </div>
+    }
+</div>

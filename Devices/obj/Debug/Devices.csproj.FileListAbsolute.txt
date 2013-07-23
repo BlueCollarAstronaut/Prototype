@@ -1,0 +1,7 @@
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\bin\Debug\Devices.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\bin\Debug\Devices.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\bin\Debug\Prototype.Framework.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\bin\Debug\Prototype.Framework.pdb
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\obj\Debug\Devices.dll
+C:\Users\sstewart\Documents\Visual Studio 2010\Projects\Prototype OLD\Prototype\Devices\obj\Debug\Devices.pdb

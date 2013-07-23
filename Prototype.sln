@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{4E6A5E31-0934-48D2-8D7C-D96B666A70DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework", "Widget\Framework.csproj", "{0520CCDF-F6F2-4338-AA93-C26A36446D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Widgets", "Widgets\Widgets.csproj", "{81D98BEB-6064-4CDC-8899-1E52AA7D4CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{0C602902-173C-4DF8-8411-68C4FD1F8AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devices", "Devices\Devices.csproj", "{CAA51433-7A3C-4C9D-8864-3470CD66011B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E6A5E31-0934-48D2-8D7C-D96B666A70DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6A5E31-0934-48D2-8D7C-D96B666A70DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6A5E31-0934-48D2-8D7C-D96B666A70DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6A5E31-0934-48D2-8D7C-D96B666A70DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0520CCDF-F6F2-4338-AA93-C26A36446D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0520CCDF-F6F2-4338-AA93-C26A36446D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0520CCDF-F6F2-4338-AA93-C26A36446D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0520CCDF-F6F2-4338-AA93-C26A36446D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D98BEB-6064-4CDC-8899-1E52AA7D4CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D98BEB-6064-4CDC-8899-1E52AA7D4CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D98BEB-6064-4CDC-8899-1E52AA7D4CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D98BEB-6064-4CDC-8899-1E52AA7D4CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C602902-173C-4DF8-8411-68C4FD1F8AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C602902-173C-4DF8-8411-68C4FD1F8AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C602902-173C-4DF8-8411-68C4FD1F8AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C602902-173C-4DF8-8411-68C4FD1F8AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA51433-7A3C-4C9D-8864-3470CD66011B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA51433-7A3C-4C9D-8864-3470CD66011B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA51433-7A3C-4C9D-8864-3470CD66011B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA51433-7A3C-4C9D-8864-3470CD66011B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal
